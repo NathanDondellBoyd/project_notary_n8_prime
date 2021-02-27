@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notary N8</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+        
+        
+        <h1>Notary N8</h1>
+        <p> FAST, RELIABLE NOTARY SERVICES</p>
+        <p> STRAIGHT TO YOU!</p>
+        <form action="notary_n8.html" method="POST">
+            <h2> Register </h2>
+
+
+            <!--Gathers information of Client-->
+            <div class="client">
+            <fieldset>
+                <legend><span class="number">1</span>Name and Location</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="client_name">
+
+            <label for="time">Time of Appointment</label>
+            <input type="datetime-local" id="time" name="client_time">
+
+            <label for="phone">Contact Number</label>
+            <input type="tel" id="phone" name="client_number">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="client_email">
+            <label>Contact Preference</label>
+            <input type="radio" id="contact_email" value="contact_email" name="contact_choice"><label for="contact_email" class="light">Email</label>
+            <input type="radio" id="contact_phone" value="contact_phone" name="contact_choice"><label for="contact_phone" class="light">Phone</label>
+            </fieldset>
+            </div>
+
+            <!--Gathers information of Document-->
+            <div class="document">
+            <fieldset>
+                <legend><span class="number">2</span>About Documment</legend>
+                <label for="page_number">Number of Pages</label>
+                <input type="number" id="page_number" name="client_pages">
+
+                <label for="document">Document Type</label>
+                <select id="document" name="doc_type">
+                    <option value="real_estate">Real Estate</option>
+                    <option value="business">Business</option> 
+                    <option value="personal">Personal<option>
+                </select>
+                
+                <label for="comment">Notes on Document</label>
+                <textarea id="comment" name="document_comment"></textarea>
+            </fieldset>
+            </div>
+            
+            <!--Initiate calculations for Estimate-->
+            <div class="estimate">
+            <button type="submit">Enter</button>
+            </div>
+
+        </form>
+    </div>
+    </body>
+</html>

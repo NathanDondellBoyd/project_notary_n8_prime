@@ -1,0 +1,18 @@
+h1 {
+    color: red;
+}
+
+.box {
+ background-image: url(../images/3_notary_n8.jpg);
+ background-color: rgb(138, 136, 160);
+ background-size: cover;
+ background-position: center;
+}
+
+.client {
+    background-color:rgb(103, 98, 167);
+}
+
+.document {
+    background-color: turquoise;
+}
