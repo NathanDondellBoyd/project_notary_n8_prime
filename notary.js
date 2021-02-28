@@ -1,3 +1,5 @@
-function test() 
-let test = alert ("Success!")
+function test() {
+    test = alert ("Success!")
+}
 
+test();
