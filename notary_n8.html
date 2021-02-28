@@ -21,17 +21,23 @@
             <div class="client">
             <fieldset>
                 <legend><span class="number">1</span>Name and Location</legend>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="client_name">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="client_name"><br>
+
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="client_name"><br>
+
+            <label for="middle_initial">Middle Initial</label>
+            <input type="text" id="middle_initial" name="client_name"><br>
 
             <label for="time">Time of Appointment</label>
-            <input type="datetime-local" id="time" name="client_time">
+            <input type="datetime-local" id="time" name="client_time"><br>
 
             <label for="phone">Contact Number</label>
-            <input type="tel" id="phone" name="client_number">
+            <input type="tel" id="phone" name="client_number"><br>
 
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="client_email">
+            <input type="email" id="email" name="client_email"><br>
             <label>Contact Preference</label>
             <input type="radio" id="contact_email" value="contact_email" name="contact_choice"><label for="contact_email" class="light">Email</label>
             <input type="radio" id="contact_phone" value="contact_phone" name="contact_choice"><label for="contact_phone" class="light">Phone</label>
@@ -42,8 +48,7 @@
             <div class="document">
             <fieldset>
                 <legend><span class="number">2</span>About Documment</legend>
-                <label for="page_number">Number of Pages</label>
-                <input type="number" id="page_number" name="client_pages">
+
 
                 <label for="document">Document Type</label>
                 <select id="document" name="doc_type">
@@ -52,7 +57,10 @@
                     <option value="personal">Personal<option>
                 </select>
                 
-                <label for="comment">Notes on Document</label>
+                <label for="page_number">Number of Pages</label>
+                <input type="number" id="page_number" name="client_pages">
+
+                 <label for="comment">Notes on Document</label>
                 <textarea id="comment" name="document_comment"></textarea>
             </fieldset>
             
