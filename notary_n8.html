@@ -4,7 +4,7 @@
         <title>Notary N8</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
-        
+       
     </head>
     <body>
         <div class="box">
@@ -26,9 +26,21 @@
 
             <label for="last_name">Last Name</label>
             <input type="text" id="last_name" name="client_name"><br>
-
+                     
             <label for="middle_initial">Middle Initial</label>
             <input type="text" id="middle_initial" name="client_name"><br>
+            
+            <label for="address">Address</label>
+            <input type="text" id="address" name="client_address"><br>
+            
+            <label for="city">City</label>
+            <input type="text" id="city" name="client_city"><br>
+
+            <label for="state">State</label>
+            <input type="text" id="state" name="client_state"><br>
+
+            <label for="zip">Zip Code</Code></label>
+            <input type="text" id="zip" name="client_zip"><br>
 
             <label for="time">Time of Appointment</label>
             <input type="datetime-local" id="time" name="client_time"><br>
@@ -38,10 +50,12 @@
 
             <label for="email">Email Address</label>
             <input type="email" id="email" name="client_email"><br>
+            
             <label>Contact Preference</label>
             <input type="radio" id="contact_email" value="contact_email" name="contact_choice"><label for="contact_email" class="light">Email</label>
             <input type="radio" id="contact_phone" value="contact_phone" name="contact_choice"><label for="contact_phone" class="light">Phone</label>
-            </fieldset>
+            
+        </fieldset>
             </div>
 
             <!--Gathers information of Document-->
@@ -64,15 +78,16 @@
                 <textarea id="comment" name="document_comment"></textarea>
             </fieldset>
             
-        </form>
+           
     
            <!--Initiate calculations for Estimate-->
            
-          <div class="button">
-             <button type="submit" onsubmit="test">Enter</button>
-          </div>
-            <script src="notary.js"></script>
-         
+        
+             <button type="submit" onclick="test">Enter</button>
+          
+             <script src="notary.js"></script>
+        
+        </form>
         
     </div>
    
