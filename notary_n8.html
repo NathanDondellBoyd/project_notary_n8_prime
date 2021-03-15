@@ -41,7 +41,7 @@
             <input type="text" id="state" name="client_state" required><br>
 
             <label for="zip">Zip Code</Code></label>
-            <input type="number" id="zip" name="client_zip" required><br>
+            <input type="text" id="zip" name="client_zip" required><br>
 
             <label for="time">Time of Appointment</label>
             <input type="datetime-local" id="time" name="client_time" required><br>
@@ -64,7 +64,7 @@
             </div>
 
             <!--Gathers information of Document-->
-            <div class="document">
+            <div class="documentForm">
             <fieldset>
                 <legend><span class="number">2...</span>About Documment</legend>
 
@@ -77,7 +77,7 @@
                 </select>
                 
                 <label for="page_number">Number of Pages</label>
-                <input type="number" id="pages" name="client_pages" required>
+                <input type="text" id="pages" name="client_pages" required>
 
                  <label for="comment">Notes on Document</label>
                 <textarea id="comment" name="document_comment"></textarea>
@@ -88,7 +88,7 @@
            <!--Initiate calculations for Estimate-->
            
             <div class="btn">
-             <button type="submit" id= "theButton" onclick="getEstimate">Enter</button>
+             <button type="submit" id= "theButton" onclick="getEstimate()">Enter</button>
             </div>
              
         

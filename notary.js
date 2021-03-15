@@ -1,67 +1,42 @@
-/*
-function test() {
-    alert ("Success!")
-}
-
-test();*/
-
-
-/*function estimate( ){
-
-
-
-}
-console.log ( 'Your estimate is' + estimate() )*/
-
-/* Collects data from class = Client 
-const client = {
-    firstName: 'first_name',
-    middleInitial: 'middle_initial',
-    lastName: 'last_name',
-    address: 'address',
-    city: 'city',
-    state: 'state',
-    zip: 'zip',
-    time: 'time',
-    phone:'phone',
-    email: 'email',
-};
-console.log(client);
-*/
 
 function getPages(){
     
-    let p = document.getElementById('pages').value;
-     p = parseInt(pages);
+    let p = document.getElementById("pages").value;
+     p = parseInt(p);
+
+     return p;
     
     
 }
 
 function getDocument(){
-    let d= document.getElementById('document').value;
-        if (document=="Personal")
-         { d=10;}
-          if (document=="Business")
-         { d= 25;}
-          if (document=="Real Estate")
-        { d= 50;}
+    let amount;
+    let d= document.getElementById("document").value;
+        if (d=="personal")
+         { amount=10;}
+          if (d=="business")
+         { amount= 25;}
+        else (d=="real_estate")
+         { amount= 50;}
+
+        return amount;
         
 }
 
   function getEstimate(){
-        const theButton= document.getElementById('theButton');
+      /*  const theButton= document.getElementById('theButton');*/
          let workTotal = getPages() + getDocument();
 
-         theButton.addEventListener('onclick',() => {
+         
 
-         alert( workTotal.value)})
+         alert(workTotal);
 
         }
 
  
 
     
-        
+
         
 
 
