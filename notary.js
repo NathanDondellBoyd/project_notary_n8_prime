@@ -23,13 +23,23 @@ function getDocument(){
         
 }
 
+function getCounty(){
+    let zone;
+    let c= document.getElementById("county").value;
+        if (c=="jefferson")
+        {zone=5;}
+        if (c=="bulliet")
+        {zone=15;}
+        else (c=="shelby")
+        {zone=25;}
+
+        return zone;
+}
+
+
   function getEstimate(){
-      /*  const theButton= document.getElementById('theButton');*/
-         let workTotal = getPages() + getDocument();
-
-         
-
-         alert(workTotal);
+       let workTotal = getPages() + getDocument() + getCounty();
+        alert(workTotal);
 
         }
 

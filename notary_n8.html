@@ -21,7 +21,7 @@
             <!--Gathers information of Client-->
             <div class="client">
             <fieldset>
-                <legend><span class="number">1...</span>Name and Location</legend>
+                <legend><span class="number"> 1   </span>Name and Location</legend>
             <label for="first_name">First Name</label>
             <input type="text" id="first_name" name="client_first" required><br>
 
@@ -66,7 +66,7 @@
             <!--Gathers information of Document-->
             <div class="documentForm">
             <fieldset>
-                <legend><span class="number">2...</span>About Documment</legend>
+                <legend><span class="number"> 2   </span>About Documment</legend>
 
 
                 <label for="document">Document Type</label>
@@ -75,9 +75,18 @@
                     <option value="business">Business</option> 
                     <option value="personal">Personal<option>
                 </select>
-                
+
                 <label for="page_number">Number of Pages</label>
                 <input type="text" id="pages" name="client_pages" required>
+
+
+                <label for="county">County</label>
+                <select id="county" name="commonwealth" required>
+                    <option value="jefferson">Jefferson</option>
+                    <option value="bulliet">Bulliet</option> 
+                    <option value="shelby">Shelby<option>
+                </select>
+                
 
                  <label for="comment">Notes on Document</label>
                 <textarea id="comment" name="document_comment"></textarea>
