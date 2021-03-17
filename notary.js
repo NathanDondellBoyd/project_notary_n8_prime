@@ -1,7 +1,44 @@
+const navSlider= ()=>{
+    const burger= document.querySelector(".burger");
+    const nav= document.querySelector(".nav-links");
+    const navLinks= document.querySelectorAll(".nav-links li");
+
+//Toggle
+    burger.addEventListener("click", ()=> {
+        nav.classList.toggle("nav-active");
+      
+      
+ //Animation
+    navLinks.forEach((link,index) =>{
+    
+        if (link.style.animation){
+            link.style.animation= "";
+         }
+
+         else {
+            link.style.animation= `navLinkFade 0.5s ease forwards ${index/7 + 1.5}s`;
+            
+         }
+         
+
+});
+    burger.classList.toggle("toggle");
+ 
+    });
+
+}
+    navSlider();
+
+
+    
+
+
+   
+
 
 function getPages(){
     
-    let p = document.getElementById("pages").value;
+    let p = document.getElementById("pages").value; 
      p = parseInt(p);
 
      return p;
@@ -38,14 +75,14 @@ function getCounty(){
 
 
   function getEstimate(){
-       let workTotal = getPages() + getDocument() + getCounty();
+       let workTotal = getPages() + getDocument();
         alert(workTotal);
 
         }
 
  
 
-    
+
 
         
 
