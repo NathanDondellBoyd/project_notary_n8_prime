@@ -1,9 +1,10 @@
+//Navagation
 const navSlider= ()=>{
     const burger= document.querySelector(".burger");
     const nav= document.querySelector(".nav-links");
     const navLinks= document.querySelectorAll(".nav-links li");
 
-//Toggle
+//Toggle xmovement
     burger.addEventListener("click", ()=> {
         nav.classList.toggle("nav-active");
       
@@ -16,13 +17,13 @@ const navSlider= ()=>{
          }
 
          else {
-            link.style.animation= `navLinkFade 0.5s ease forwards ${index/7 + 1.5}s`;
+            link.style.animation= `navLinkFade 0.5s ease forwards ${index/7 + 0.3}s`;
             
          }
          
 
 });
-    burger.classList.toggle("toggle");
+    burger.classList.toggle("xmovement");
  
     });
 
@@ -34,7 +35,7 @@ const navSlider= ()=>{
 
 
    
-
+// Estimate Calculation and Display
 
 function getPages(){
     
