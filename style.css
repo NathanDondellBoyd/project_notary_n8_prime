@@ -4,26 +4,58 @@ body {
     box-sizing: border-box;
     background-image: url(../images/3_notary_n8.jpg);
     background-color: rgb(138, 136, 160);
+    opacity: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Palanquin', sans-serif;
     text-align: center;
 }
 
+.container1{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.welcome{
+    text-align: left;
+    color: rgb(103, 98, 167);
+    flex-direction: row;
+}
+
+.container2 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.client input{
+
+    padding-top: 20px;
+    border: none;
+    background-color:white;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
 
 .client {
-    background-color:rgb(103, 98, 167);
-    text-align: center;
+    background-color:white;
+    text-align: left;
+    
 }
 
 .documentForm {
-    background-color: rgb(23, 151, 6);           
+    background-color: rgb(23, 151, 6);
+               
 }
 
 .btn {
     background-color: turquoise;
     text-align: center;
     cursor: pointer;
+    
 }
 
 
@@ -55,7 +87,7 @@ nav {
     display: flex;
     background-color: cornsilk;
     justify-content: space-around;
-    width: 15%;
+    width: 40%;
 
 
 }
@@ -92,7 +124,7 @@ nav {
 
 
 /*Tablet*/
-@media  (max-width:1025px){
+@media screen and (max-width:1020px){
   body{
     background-image: none;
     background-color: indigo;
@@ -103,7 +135,7 @@ nav {
       overflow: hidden;
       
   }
-}
+
 
 /*Cell Phone*/
 @media screen and ( max-width:768px){
