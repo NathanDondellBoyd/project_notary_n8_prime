@@ -3,6 +3,7 @@
     <head>
         <title>Notary N8</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Palanquin&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="style.css">
@@ -11,11 +12,10 @@
     <body>
     <!--Controls Navagation Bar-->
         <nav>
-         <div class= "logo">
+         
+        <div class= "logo">
             <h2>Notary N8</h2>
-<!--<p> Fast and Reliable  Notary Services</p>
-             <p>STRAIGHT to YOU</p>-->
-            </div>
+        </div>
 
             <div class= "burger">
                 <div class="line1"></div>
@@ -77,13 +77,13 @@
             <fieldset>
                 <legend><span class="number"> 1   </span>Name and Location</legend>
             <label for="first_name">First Name</label>
-            <input type="text" id="first_name" name="client_first" required><br>
+            <input type="text" id="first" name="client_first" required><br>
 
             <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" name="client_middle" required><br>
+            <input type="text" id="last" name="client_middle" required><br>
                      
             <label for="middle_initial">Middle Initial</label>
-            <input type="text" id="middle_initial" name="client_last" required><br>
+            <input type="text" id="middle" name="client_last" required><br>
             
             <label for="address">Address</label>
             <input type="text" id="address" name="client_address" required><br>
@@ -112,7 +112,9 @@
             <input type="radio" id="contact_email" value="contact_email" name="contact_choice"><label for="contact_email" class="light">Email</label>
             <input type="radio" id="contact_phone" value="contact_phone" name="contact_choice"><label for="contact_phone" class="light">Phone</label>
             <input type="radio" id="contact_both" value="contact_both" name="contact_choice"><label for="contact_both" class="light">Both</label>
-            
+    
+        </fieldset>
+
             
         </fieldset>
             </div>
@@ -151,7 +153,7 @@
            <!--Initiate calculations for Estimate-->
            
             <div class="btn">
-             <button type="submit" id= "theButton" onclick="getEstimate()">Enter</button>
+             <button type="submit" id= "btn" onclick="getEstimate()">Enter</button>
             </div>
              
         

@@ -1,4 +1,4 @@
-//Navagation
+//Navagation           
 const navSlider= ()=>{
     const burger= document.querySelector(".burger");
     const nav= document.querySelector(".nav-links");
@@ -30,10 +30,28 @@ const navSlider= ()=>{
 }
     navSlider();
 
+    //Collects Information for Client List
+    let register= [];
+ const addClient= (ev)=>{
+     ev.preventDefault();
+     let client= {
+         first: document.getElementById("first").value,
+         last: document.getElementById("last").value,
+         middle: document.getElementById("middle").value,
+         address: document.getElementById("address").value,
+         city: document.getElementById("city").value,
+         state: document.getElementById("state").value,
+         zip: document.getElementById("zip").value,
+         time: document.getElementById("time").value,
+         phone: document.getElementById("phone").value,
+         email: document.getElementById("email").value
+    }
 
+    register.push(client);
+    document.forms[0].reset();
+    localStorage.setItem("MyClientList", JSON.stringify(register) );
     
-
-
+     }  
    
 // Estimate Calculation and Display
 
@@ -51,53 +69,48 @@ function getDocument(){
     let amount;
     let d= document.getElementById("document").value;
         if (d=="personal")
-         { amount=10;}
-          if (d=="business")
-         { amount= 25;}
-        else (d=="real_estate")
-         { amount= 50;}
+         amount=10;
+          else if (d=="business")
+         amount= 25;
+        else if(d=="real_estate")
+            amount=50;
+        else
+            amount= 0;
+        
 
         return amount;
         
-}
+
+   
+    }
+
 
 function getCounty(){
     let zone;
     let c= document.getElementById("county").value;
         if (c=="jefferson")
-        {zone=5;}
-        if (c=="bulliet")
-        {zone=15;}
-        else (c=="shelby")
-        {zone=25;}
+        zone=5;
+        else if (c=="bulliet")
+        zone=15;
+        else if (c=="shelby")
+        zone=25;
+        else
+        zone= 0;
 
-        return zone;
+        
+
+      return zone;
 }
 
 
   function getEstimate(){
-       let workTotal = getPages() + getDocument();
+       let workTotal = getPages() + getDocument() + getCounty();
         alert(workTotal);
-
-        }
-
- 
-
-
+       
 
         
+  }
 
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
+  document.addEventListener('DOMContentLoaded', ()=> {
+      document.getElementById("btn").addEventListener("click",addClient);
+  })

@@ -4,7 +4,7 @@ body {
     box-sizing: border-box;
     background-image: url(../images/3_notary_n8.jpg);
     background-color: rgb(138, 136, 160);
-    opacity: 100%;
+    opacity: 85%;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Palanquin', sans-serif;
@@ -14,6 +14,7 @@ body {
 .container1{
     max-width: 1400px;
     margin: 0 auto;
+    opacity: 50%;
 }
 
 
@@ -39,6 +40,15 @@ body {
     outline: none;
 }
 
+.client label{
+    display:block;
+    margin: 0.1em;
+}
+
+.client input [type="radio"]{
+    text-align: center;
+}
+
 
 .client {
     background-color:white;
@@ -52,20 +62,22 @@ body {
 }
 
 .btn {
-    background-color: turquoise;
+    font-size:bold;
+    max-width: 200px;
+    margin: 0 auto;
+    background-color: none;
     text-align: center;
-    cursor: pointer;
     
-}
+    }
 
-
-
+    
 
 .logo{
     color: tomato;
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 5px;
+    opacity: 100%;
 
 }
 
@@ -124,7 +136,7 @@ nav {
 
 
 /*Tablet*/
-@media screen and (max-width:1020px){
+@media screen and (max-width:1024px){
   body{
     background-image: none;
     background-color: indigo;
@@ -138,7 +150,7 @@ nav {
 
 
 /*Cell Phone*/
-@media screen and ( max-width:768px){
+@media only screen and (max-width: 768px){
     body{
         overflow-x: hidden;
         background-image: none;
@@ -150,6 +162,7 @@ nav {
         right:0px;
         height: 92vh;
         top: 8vh;
+        overflow: hidden;
         color: #000;
         background-color: rgb(208, 209, 161);
         display: flex;
@@ -206,3 +219,4 @@ nav {
 
 }       
 
+}
