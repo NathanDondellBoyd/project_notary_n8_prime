@@ -7,82 +7,16 @@ body {
     opacity: 85%;
     background-size: cover;
     background-repeat: no-repeat;
+    font-size: 1.1em;
+    line-height: 1.5;
     font-family: 'Palanquin', sans-serif;
     text-align: center;
-}
-
-.container1{
-    max-width: 1400px;
-    margin: 0 auto;
-    opacity: 50%;
-}
-
-
-.welcome{
-    text-align: left;
-    color: rgb(103, 98, 167);
-    flex-direction: row;
-}
-
-.container2 {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-
-.client input{
-
-    padding-top: 20px;
-    border: none;
-    background-color:white;
-    cursor: pointer;
-    border-bottom: 1px solid black;
-    outline: none;
-}
-
-.client label{
-    display:block;
-    margin: 0.1em;
-}
-
-.client input [type="radio"]{
-    text-align: center;
-}
-
-
-.client {
-    background-color:white;
-    text-align: left;
-    
-}
-
-.documentForm {
-    background-color: rgb(23, 151, 6);
-               
-}
-
-.btn {
-    font-size:bold;
-    max-width: 200px;
-    margin: 0 auto;
-    background-color: none;
-    text-align: center;
-    
-    }
-
-    
-
-.logo{
-    color: tomato;
-    text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 5px;
-    opacity: 100%;
-
-}
-
+    overflow-x: hidden;
+        
+} 
 
 nav {
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -116,6 +50,136 @@ nav {
     list-style: none;
 }
 
+
+    
+
+
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+    padding: 1em 0;
+
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.estimatebtn{
+    display: inline-block;
+    background: slategrey;
+    color: snow;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid black;
+    margin: .5em 0;
+}
+
+.estimatebtn:hover {
+    background: snow;
+    color: slategrey;
+}
+
+.calc-btn{
+    display: inline-block;
+    background: slategrey;
+    color: snow;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid black;
+    margin: .5em 0;
+}
+
+.calc-btn:hover {
+    background: snow;
+    color: slategrey;
+}
+
+
+
+
+#landing {
+    min-height: 450px;
+    color: snow;
+    text-align: center;
+}
+    
+
+#landing .bg-image{
+    position: absolute;
+    background: darkgrey url("\\images\InspireExchange-notarypic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 50%;
+}
+
+
+
+
+
+
+.welcome{
+    text-align: left;
+    color: rgb(103, 98, 167);
+    flex-direction: row;
+}
+
+.client input{
+
+    padding-top: 20px;
+    margin:  auto;
+    text-align: left;
+    background-color:rgb(224, 220, 220);
+    max-width: 800px;
+    max-height: 800px;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    border: none;
+
+}
+
+.client label{
+    display:block;
+    width: 340px;
+    
+}
+
+.contact{
+     display: flex;
+     max-width: 800px;
+     text-align: left;
+
+}
+
+
+   
+.logo{
+    color: tomato;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 5px;             
+    opacity: 100%;
+
+}
+
+
+
+
+
 .burger{
      display: none;
 }
@@ -129,94 +193,80 @@ nav {
 
 }
 
-
-
-
-
-
-
-/*Tablet*/
-@media screen and (max-width:1024px){
-  body{
-    background-image: none;
-    background-color: indigo;
-
-   }
-  .nav-links{
-      width: 60%;
-      overflow: hidden;
-      
-  }
-
-
-/*Cell Phone*/
-@media only screen and (max-width: 768px){
-    body{
-        overflow-x: hidden;
-        background-image: none;
-        background-color: cadetblue;
-    }
-   
-    .nav-links{
-        position: absolute;
-        right:0px;
-        height: 92vh;
-        top: 8vh;
-        overflow: hidden;
-        color: #000;
-        background-color: rgb(208, 209, 161);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 30%;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-
-    }
- 
-
-    .nav-links li{
-        opacity:0;
+.nav-links{
+    position: absolute;
+    right:0px;
+    height: 92vh;
+    top: 8vh;
+    overflow: hidden;
+    color: #000;
+    background-color: rgb(208, 209, 161);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 25%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
 }
 
-    .burger{
-        display: block;
-        cursor: pointer;
-    }
-   
-    .nav-active{
-        transform: translateX(0%);
-    }
+/* Hamburger Nav Animation*/
+.nav-links li{
+    opacity:0;
+}
 
-    @keyframes navLinkFade {
-        from{
-            opacity: 0;
-            transform: translateX(50px);
-        }
-        
-        to{
-            opacity: 1;
-            transform: translateX(0px);
-        }
-    }
+.burger{
+    display: block;
+    cursor: pointer;
+}
 
-    .xmovement .line1{
-        transform: rotate(-45deg) translate(-5px,6px);
-        
-    }
-    .xmovement .line2{
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
         opacity: 0;
-        
+        transform: translateX(50px);
     }
-    .xmovement .line3{
-        transform: rotate(45deg) translate(-5px,-6px);
-        
+    
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.xmovement .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+    
+}
+.xmovement .line2{
+    opacity: 0;
+    
+}
+.xmovement .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+    
+}
+
+
+
+    
+
+}
+
+/*Tablet*/
+@media screen and (min-width:768px){
+    body{
+      background-image: none;
+      
+  
+  
+     }
+    .nav-links{
+        width: 60%;
+        overflow: hidden;
     }
 
-
-
-
-
-}       
-
+        
 }

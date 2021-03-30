@@ -32,49 +32,108 @@
         </nav>
         
       
+        <!--Landing Page-->
+        <header id="landing" class="grid">
+            <div class="bg-image"></div>
+
         
-         
+            
+            
+                <h3>Fast and Reliable Notary Services</h3>
+                <h3> Straight to You!</h3>
+
+                <p>Welcome to the New and Better way to do Notary</p>
+
+
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque facere cumque quasi! Unde explicabo obcaecati iure voluptas numquam impedit quas deleniti optio nihil. Laboriosam molestias autem architecto fugiat repellat porro.</p>
+                <a href="#documentForm" class="estimatebtn">Get Estimate</a>
+          
+            </header>
+
+
+
+        
+        
+
+        
+            <!--                This is the Main  Section              -->
+
+            <main id="main">
+
+
+            <!--Estimate Section-->
+            <section id="section-a" class="grid">
+                <div class="content-wrap">
+                    <h2> Region of Services and Estimate</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellendus nemo doloremque soluta, earum quo illo dolor voluptatem sint, omnis quaerat nam iure esse possimus nihil iste sapiente, fuga in. </p>
+
+                <div class="documentForm">
+
+                <fieldset>
+                    <legend><span class="number">   </span>About Documment</legend>
+    
+    
+                    <label for="document">Document Type</label>
+                    <select id="document" name="doc_type" required><br>
+                        <option value="real_estate">Real Estate</option>
+                        <option value="business">Business</option> 
+                        <option value="personal">Personal<option>
+                    </select>
+    
+                    <label for="page_number">Number of Pages</label>
+                    <input type="text" id="pages" name="client_pages" required><br>
+    
+    
+                    <label for="county">County</label>
+                    <select id="county" name="commonwealth" required><br>
+                        <option value="jefferson">Jefferson</option>
+                        <option value="bulliet">Bulliet</option> 
+                        <option value="shelby">Shelby<option>
+                    </select>
+                    
+    
+                     <label for="comment">Notes on Document</label>
+                    <textarea id="comment" name="document_comment"></textarea>
+                </fieldset>
+            </div>
+             </section>  
+
+             <!--Initiate calculations for Estimate-->
+           
+            <div class="calc-btn">
+                <button type="submit" id= "btn" onclick="getEstimate()">Enter</button>
+               </div>
+            
+           
+        
             
 
 
-            <!--States information about: Company, Services, Personel (Ad Copy)-->
-            <!--Who-->
-            <!--What-->
-            <!--When-->
-            <!--Where-->
-            <!--Why-->
-            <!--How-->
-
-            <!--Landing Page-->
-            <div class="container1">
-                <section id="landing">
-                <div class="welcome">
-                    <h3>Fast and Reliable Notary Services</h3>
-                    <h3> Straight to You!</h3>
-
-                    <p>Welcome to the New and Better way to do Notary</p>
-
-
-                </div>
-
-                
-
-
-
-            </section>
-            </div>
-
-
-
             <!--Gathers information of Client-->
-        <div class="container2">
         
-            <section id="register">
+        
+            <section id="section-b" class="grid">
+                <div class="content-wrap">
             <h2> Let's Get Started! </h2>
+            <ul>
+                <li>
+                    <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-title">How can we Help you</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quae pariatur porro. Minima voluptatibus, dignissimos nobis dolor quibusdam soluta harum ad officiis. Aliquam architecto soluta, ducimus quae debitis quo odio?</p>
+
+
+
+                    </div>
+
+                    </div>
+                </li>
+            </ul>
 
             <form action="notary_n8.html" method="POST"></form>
             <div class="client">
-            <fieldset>
+          <!-- <fieldset> -->
                 <legend><span class="number"> 1   </span>Name and Location</legend>
             <label for="first_name">First Name</label>
             <input type="text" id="first" name="client_first" required><br>
@@ -107,62 +166,42 @@
             <input type="email" id="email" name="client_email" placeholder="entry@email.com" required><br>
 
             
-            
+            <div class="contact">
             <label>Contact Preference</label>
             <input type="radio" id="contact_email" value="contact_email" name="contact_choice"><label for="contact_email" class="light">Email</label>
             <input type="radio" id="contact_phone" value="contact_phone" name="contact_choice"><label for="contact_phone" class="light">Phone</label>
             <input type="radio" id="contact_both" value="contact_both" name="contact_choice"><label for="contact_both" class="light">Both</label>
-    
+            </div>
+
         </fieldset>
+    </div>
+    </section>
 
             
         </fieldset>
-            </div>
+        
 
-            <!--Gathers information of Document-->
-            <div class="documentForm">
-            <fieldset>
-                <legend><span class="number"> 2   </span>About Documment</legend>
-
-
-                <label for="document">Document Type</label>
-                <select id="document" name="doc_type" required><br>
-                    <option value="real_estate">Real Estate</option>
-                    <option value="business">Business</option> 
-                    <option value="personal">Personal<option>
-                </select>
-
-                <label for="page_number">Number of Pages</label>
-                <input type="text" id="pages" name="client_pages" required><br>
-
-
-                <label for="county">County</label>
-                <select id="county" name="commonwealth" required><br>
-                    <option value="jefferson">Jefferson</option>
-                    <option value="bulliet">Bulliet</option> 
-                    <option value="shelby">Shelby<option>
-                </select>
+            
+            
+           
+        </form>
+        <!--                Contact Us Links-->
+        <li>
+            <div class="card">
+            <div class="card-content">
+                <h3 class="card-title">Contact Us</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quae pariatur porro. Minima voluptatibus, dignissimos nobis dolor quibusdam soluta harum ad officiis. Aliquam architecto soluta, ducimus quae debitis quo odio?</p>
                 
 
-                 <label for="comment">Notes on Document</label>
-                <textarea id="comment" name="document_comment"></textarea>
-            </fieldset>
-            
-         </section>  
-    
-           <!--Initiate calculations for Estimate-->
-           
-            <div class="btn">
-             <button type="submit" id= "btn" onclick="getEstimate()">Enter</button>
+
             </div>
-             
+
+            </div>
+        </li>
+    
         
-        </form>
-        
-    </div>
-        </div>
         
     
            <script src="notary.js"></script>
-
+            </main>
     </body>

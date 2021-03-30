@@ -47,7 +47,7 @@ const navSlider= ()=>{
          email: document.getElementById("email").value
     }
 
-    register.push(client);
+    register.push(client);{
     document.forms[0].reset();
     localStorage.setItem("MyClientList", JSON.stringify(register) );
     
@@ -113,4 +113,4 @@ function getCounty(){
 
   document.addEventListener('DOMContentLoaded', ()=> {
       document.getElementById("btn").addEventListener("click",addClient);
-  })
+  }
